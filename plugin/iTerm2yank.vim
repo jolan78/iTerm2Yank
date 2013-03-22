@@ -1,9 +1,9 @@
 
-if exists('g:loaded_iterm2yank')
+if exists('g:loaded_iTerm2yank')
     finish
 endif
-let g:loaded_iterm2yank= 1
+let g:loaded_iTerm2yank= 1
 
-command! ItYank call iterm2yank#itYank()
+command! ItYank call iTerm2yank#itYank()
 
 finish

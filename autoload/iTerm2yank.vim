@@ -1,5 +1,5 @@
 
-function! iterm2yank#itYank()
+function! iTerm2yank#itYank()
 	" TODO: check availability of echo and base64
 	let buffer=system('base64', @")
 	let buffer=substitute(buffer, "\n$", "", "")
