@@ -10,6 +10,7 @@ function! iTerm2yank#itYank()
 
 	let buffer=system(cmd, @")
 	let buffer=substitute(buffer, "\n$", "", "")
-	exe "silent !echo '\033]52;psc01234567;".buffer."\a'"
+
+	exe "silent !echo '\\033]52;psc01234567;".buffer."\\a'"
 	redraw!
 endf
